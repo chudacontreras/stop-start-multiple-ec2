@@ -1,0 +1,6 @@
+Nombre role: role-for-lambda-stop-start-ec2
+Description: Allows Lambda functions to call AWS services on your behalf.
+
+Politicas Agregadas:
+AWS: CloudWatchLogsFullAccess
+Custom: lambda-ec2-start-stop-policy

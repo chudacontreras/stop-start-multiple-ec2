@@ -7,7 +7,7 @@ def lambda_handler(event, lambda_context):
     ec2_client = boto3.client("ec2", region_name=region)
     reservations = ec2_client.describe_instances(Filters=[
         {
-            "Name": 'tag:Stop',
+            "Name": 'tag:stop',
             "Values": ['yes'],
         }
     ]).get("Reservations")
